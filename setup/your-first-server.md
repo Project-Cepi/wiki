@@ -27,7 +27,7 @@ Here is a correct example:
 
 However even after those steps, you will not be able to connect, what we miss here is an instance \(the world\)
 
-_Please check the_ [_instances_](../world/instances.md) _and_ [_events_](../feature/events.md) _pages if you have any question about how to create/listen to one_
+_Please check the_ [_instances_](../world/instances.md) _and_ [_events_](../archive/events.md) _pages if you have any question about how to create/listen to one_
 
 ```java
 player.addEventCallback(PlayerLoginEvent.class, event -> {
@@ -67,7 +67,7 @@ public class MainDemo {
 
         // Add an event callback to specify the spawning instance (and the spawn position)
         GlobalEventHandler globalEventHandler = MinecraftServer.getGlobalEventHandler();
-        globalEventHandler.addEventCallback(PlayerLoginEvent.class, event -> {
+        globalEventHandler.addListener(PlayerLoginEvent.class, event -> {
             final Player player = event.getPlayer();
             event.setSpawningInstance(instanceContainer);
             player.setRespawnPoint(new Position(0, 42, 0));
@@ -146,8 +146,6 @@ repositories {
     mavenCentral()
 
     maven { url 'https://repo.spongepowered.org/maven' }
-    maven { url 'https://repo.velocitypowered.com/snapshots/' }
-    maven { url 'https://libraries.minecraft.net' }
     maven { url 'https://jitpack.io' }
 }
 

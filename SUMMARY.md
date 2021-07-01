@@ -10,6 +10,8 @@
 ## Thread Architecture
 
 * [Thread safety in the JVM](thread-architecture/thread-safety.md)
+* [Acquirable API](thread-architecture/acquirable-api/README.md)
+  * [The inside](thread-architecture/acquirable-api/inside-the-api.md)
 
 ## World
 
@@ -24,10 +26,12 @@
 
 * [Adventure](feature/adventure.md)
 * [Player capabilities](feature/player-capabilities.md)
-* [Events](feature/events.md)
+* [Events](feature/events/README.md)
+  * [Server list ping](feature/events/server-list-ping.md)
 * [Items](feature/items.md)
 * [Entities](feature/entities/README.md)
   * [AI](feature/entities/ai.md)
+* [Tags](feature/tags.md)
 * [Schedulers](feature/schedulers.md)
 * [Commands](feature/commands.md)
 * [Inventories](feature/inventories.md)
@@ -37,6 +41,8 @@
 * [Advancements](feature/advancements.md)
 * [Map rendering](feature/map-rendering/README.md)
   * [GLFWMapRendering](feature/map-rendering/glfwmaprendering.md)
+* [Query system](feature/query.md)
+* [Open to LAN](feature/open-to-lan.md)
 
 ## Expansion
 
@@ -53,7 +59,10 @@
 
 ## Release Candidates
 
+* [Blocks WIP](release-candidates/blocks-wip.md)
 * [Server ticks](release-candidates/tick-threads.md)
-* [Acquirable API](release-candidates/acquirable-api/README.md)
-  * [The inside](release-candidates/acquirable-api/inside-the-api.md)
+
+## Archive
+
+* [Events](archive/events.md)
 
